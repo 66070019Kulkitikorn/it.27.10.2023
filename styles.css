@@ -2,6 +2,8 @@
 body {
     font-family: sans-serif;
     background-image: url(/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .content {
@@ -9,6 +11,7 @@ body {
     width: 1024px;
     margin: auto;
     background-color: rgb(255, 230, 252);
+    border-radius: 25px;
 }
 
 .flex-top {
@@ -63,11 +66,22 @@ body {
 
 .gallery-item {
     background-color: rgb(86, 255, 142);
+    width: 90%;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.gallery-item:hover{
+    background-color: rgb(86, 255, 142);
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
+    opacity: 1.0;
 }
 
 .on-hover {
